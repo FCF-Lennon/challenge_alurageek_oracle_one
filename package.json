@@ -1,0 +1,22 @@
+{
+  "name": "challenger_alurageek",
+  "version": "1.0.0",
+  "description": "challenge de oracle one - alura latam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FCF-Lennon/challenge_alurageek_oracle_one.git"
+  },
+  "author": "pipedev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FCF-Lennon/challenge_alurageek_oracle_one/issues"
+  },
+  "homepage": "https://github.com/FCF-Lennon/challenge_alurageek_oracle_one#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
