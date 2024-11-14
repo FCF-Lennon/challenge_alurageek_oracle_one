@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* colores */
+    --electric-purple: #5300C8;
+    --midnight-blue: #03318C;
+    --light-gray: #E5E5E5;
+    --blueish-purple: #5D04D9;
+    --wine-purple: #9303A6;
+    --fuchsia-purple: #c004D9;
+    /* fuentes */
+    --font-primaria: "IBM Plex Mono", monospace;
+    --font-secundaria: "Press Start 2P", system-ui;
+}
+
+html {
+    font-family: var(--font-primaria);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    max-width: 1440px;
+}
+
+/* header */
+
+.encabezado__principal {
+    background-color: var(--electric-purple);
+    max-height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    overflow: hidden;
+    padding-right: 14px; /* para centrar el alurageek en moviles */
+    box-shadow: 0px 7px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+.encabezado__principal img {
+    width: auto;
+    max-width: max-content;
+    padding: 10px 0px 10px 28px;
+}
+
+
+.titulo__encabezado {
+    font-family: var(--font-secundaria);
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--light-gray);
+    padding: 10px 28px 10px 0px;
+}
+
+
+

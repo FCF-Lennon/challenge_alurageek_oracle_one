@@ -2,8 +2,20 @@
     "productos": [
       {
         "id": "1",
-        "titulo": "Front-end vs. Back-end: ¡Descubre el lado perfecto para ti! #LuchaDev",
+        "titulo": "Peras",
         "precio": "$10",
+        "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+      },
+      {
+        "id": "2",
+        "titulo": "Manzana",
+        "precio": "$20",
+        "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+      },
+      {
+        "id": "3",
+        "titulo": "Sandia",
+        "precio": "$100",
         "imagen": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
       }
     ]
