@@ -14,15 +14,29 @@
     --font-secundaria: "Press Start 2P", system-ui;
 }
 
-html {
+html,
+input,
+input::placeholder {
     font-family: var(--font-primaria);
 }
 
+
+
 body {
     width: 100%;
-    height: 100vh;
-    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* scroll */
+
+::-webkit-scrollbar {
+    display: none; 
+}
+
+
 
 /* header */
 
@@ -32,27 +46,277 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    overflow: hidden;
-    padding-right: 14px; /* para centrar el alurageek en moviles */
     box-shadow: 0px 7px 1px rgba(0, 0, 0, 0.25);
+    padding: 20px 0px;
+    gap: 6px;
+    width: 100%;
 }
 
-
-.encabezado__principal img {
-    width: auto;
-    max-width: max-content;
-    padding: 10px 0px 10px 28px;
+.contenedor__img-header img {
+    width: 100%;
+    height: auto;
 }
-
 
 .titulo__encabezado {
     font-family: var(--font-secundaria);
     font-size: 2.4rem;
     font-weight: 400;
     color: var(--light-gray);
-    padding: 10px 28px 10px 0px;
+    width: max-content;
+}
+
+/* main */
+
+.contenedor__principal {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* seccion productos */
+
+.seccion__crear-productos {
+   padding: 20px;
+}
+
+/* Formulario Productos */
+
+.contenedor__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+    padding: 40px 0px;
+}
+
+.titulo__formulario {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: var(--font-secundaria);
+    text-align: center;
+}
+
+.formulario__items-inputs {
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.input__formulario {
+    height: 58px;
+    border: 3px solid var(--midnight-blue);
+    border-radius: 30px;
+    padding: 0px 10px;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.input__formulario:focus {
+    border-color: var(--fuchsia-purple) !important;
+}
+
+.input__formulario:focus::placeholder {
+    color: var(--fuchsia-purple) !important;
+}
+
+.input__formulario::placeholder {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--midnight-blue);
+}
+
+.input__formulario:hover,
+.input__formulario:hover::placeholder {
+    border-color: var(--electric-purple);
+    color: var(--electric-purple);
 }
 
 
+/* formulario botones */
 
+.formulario__items-botones {
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    gap: 3%;
+}
+
+.boton__formulario {
+    flex: 1;
+    font-size: 2rem;
+    font-weight: 500;
+    border: 2px solid var(--midnight-blue);
+    border-radius: 15px;
+    font-family: var(--font-primaria);
+}
+
+.boton__enviar {
+    background-color: var(--midnight-blue);
+    color: var(--light-gray);
+
+}
+
+.boton__enviar:hover {
+    background-color: var(--electric-purple);
+    border-color: var(--electric-purple);
+}
+
+.boton__limpiar {
+    color: var(--midnight-blue);
+}
+
+.boton__limpiar:hover {
+    border-color: var(--electric-purple);
+    color: var(--electric-purple);
+}
+
+/* Listar Productos */
+
+.seccion__listar-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.titulo__seccion-productos {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: var(--font-secundaria);
+    text-align: center;
+}
+
+.contenedor__productos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px 10px;
+    margin: 0px 10px 100px 10px;
+    min-width: 355;
+    max-width: 620px;
+    max-height: 971px;
+    overflow: auto;
+    padding: 20px 0px 20px 7px;
+}
+
+
+.producto__item {
+    background-color: var(--blueish-purple);
+    display: flex;
+    flex-direction: column;
+    min-width: 169px;
+    max-width: 196px;
+    max-height: 258px;
+    width: calc(50% - 5px);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid;
+    box-shadow: -5px 6px 3.3px rgba(0, 0, 0, 0.25);
+}
+
+
+.img__item-producto {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 3px solid;
+}
+
+.producto__item:hover,
+.producto__item:hover .img__item-producto {
+    border-color: var(--fuchsia-purple);
+}
+
+.titulo__item-producto {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--light-gray);
+}
+
+/* division  precio - delete */
+
+.contenedor__precio-delete {
+    display: flex;
+    justify-content: space-between;
+}
+
+.precio__item-producto {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--light-gray);
+}
+
+/* rodapie */
+
+.contenedor__rodapie {
+    background-color: var(--electric-purple);
+    box-shadow: 0px -7px 1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 30px;
+    gap: 6px;
+}
+
+.contenedor__items-img-titulo-rodapie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.contenedor__items-img-titulo-rodapie img {
+    width: 100%;
+    height: auto;
+}
+
+.titulo__rodapie {
+    font-family: var(--font-secundaria);
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--light-gray); 
+}
+
+.descripcion__rodapie {
+    color: var(--light-gray);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.desarrollo__rodapie {
+    color: var(--light-gray);
+    font-size: 1.6rem;
+    font-weight: 150;
+}
+
+
+@media (min-width: 820px) {
+
+    /* main */
+
+    .contenedor__principal {
+        flex-direction: row;
+        margin: 50px 0px ;
+        align-items: start;
+    }
+
+    /* Listar Productos */
+
+    .seccion__listar-productos {
+        padding-top: 60px;
+    }
+
+   
+}
