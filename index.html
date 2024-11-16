@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <script type="module" src="/ass
-    ets/js/main.js" defer></script>
     <title>alurageek</title>
 </head>
 <body>
@@ -19,23 +17,8 @@
     <main class="contenedor__principal">
         <seccion class="seccion__listar-productos">
             <h1 class="titulo__seccion-productos">PRODUCTOS:</h1>
-            <ul class="contenedor__productos" alt="lista productos">
-                <li class="producto__item">
-                    <img src="/assets/imagenes/productos/frutas.jpg" class="img__item-producto" alt="imagen del producto" >
-                    <h2 class="titulo__item-producto">Peras</h2>
-                    <div class="contenedor__precio-delete">
-                        <p class="precio__item-producto ">$ 100</p>
-                        <img class="img__item-delete" src="/assets/imagenes/iconos/vector_delete.png" alt="imagen icono eliminar">
-                    </div>
-                </li>
-                <li class="producto__item">
-                    <img src="/assets/imagenes/productos/frutas.jpg" class="img__item-producto" alt="imagen del producto" >
-                    <h2 class="titulo__item-producto">Peras</h2>
-                    <div class="contenedor__precio-delete">
-                        <p class="precio__item-producto ">$ 100</p>
-                        <img class="img__item-delete" src="/assets/imagenes/iconos/vector_delete.png" alt="imagen icono eliminar">
-                    </div>
-                </li>
+            <ul class="contenedor__productos" alt="lista productos" data-lista-productos>
+                <!-- vista dinamica de la lista de productos con mensaje de error -->
             </ul>
         </seccion>
         <seccion class="seccion__crear-productos">
@@ -61,5 +44,6 @@
         <p class="descripcion__rodapie">DESARROLLADO POR PIPEDEV</p>
         <p class="desarrollo__rodapie">ALURA LATAM - 2024</p>
     </footer>
+    <script type="module" src="/assets/js/renderizar_productos.js"></script>
 </body>
 </html>
