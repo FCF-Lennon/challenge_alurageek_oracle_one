@@ -6,9 +6,30 @@ async function obtenerProductos() {
     return dataJson;
 }
 
-export const conexionAPI = {
-    obtenerProductos
+async function crearProducto(titulo, precio, imagen) {
+    const conexion = await fetch(url, {
+        method: "POST",
+        headers: {"Content-type":"application/json"},
+        body:JSON.stringify({
+            titulo:titulo,
+            precio:`${precio}`,
+            imagen:imagen
+        })
+    });
+    
+    const dataJson = await conexion.json();
+
+    if (!conexion.ok) {
+        throw new Error("Ha ocurrido un error al crear el producto :(");
+    }
+
+    return dataJson;
 }
+
+export const conexionAPI = {
+    obtenerProductos, crearProducto
+}
+
 
 
 

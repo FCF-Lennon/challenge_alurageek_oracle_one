@@ -32,7 +32,9 @@ async function renderizarProductos() {
 
 renderizarProductos();
 
-console.log("hola mundo");
+
+
+
 
 
 

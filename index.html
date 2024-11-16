@@ -22,12 +22,12 @@
             </ul>
         </seccion>
         <seccion class="seccion__crear-productos">
-            <form class="contenedor__formulario">
+            <form class="contenedor__formulario" data-formulario>
                 <h2 class="titulo__formulario">AGREGAR PRODUCTO:</h2>
                 <div class="formulario__items-inputs">
-                    <input class="input__formulario" type="text" placeholder="nombre..." required>
-                    <input class="input__formulario" type="number" placeholder="precio..." required>
-                    <input class="input__formulario" type="text" placeholder="URL imagen..." required>
+                    <input class="input__formulario" type="text" placeholder="nombre..." required data-titulo>
+                    <input class="input__formulario" type="number" placeholder="precio..." required data-precio>
+                    <input class="input__formulario" type="text" placeholder="URL imagen..." required data-url-imagen>
                 </div>
                 <div class="formulario__items-botones">
                     <input class="boton__formulario boton__enviar" type="submit" value="Enviar">
@@ -45,5 +45,6 @@
         <p class="desarrollo__rodapie">ALURA LATAM - 2024</p>
     </footer>
     <script type="module" src="/assets/js/renderizar_productos.js"></script>
+    <script type="module" src="/assets/js/crear_producto.js"></script>
 </body>
 </html>
