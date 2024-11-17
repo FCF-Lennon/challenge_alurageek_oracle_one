@@ -1,4 +1,4 @@
-import { conexionAPI } from "/assets/js/conexionAPI.js";
+import { conexionAPI } from "./conexionAPI.js";
 
 const formulario = document.querySelector("[data-formulario]");
 

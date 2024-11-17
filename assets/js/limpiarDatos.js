@@ -1,4 +1,4 @@
-import { conexionAPI } from "/assets/js/conexionAPI.js";
+import { conexionAPI } from "./conexionAPI.js";
 
 const titulo = document.querySelector('[data-titulo]');
 const precio = document.querySelector('[data-precio]');

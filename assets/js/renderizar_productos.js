@@ -1,5 +1,5 @@
-import { conexionAPI } from "/assets/js/conexionAPI.js";
-import { eventoEliminar } from "/assets/js/limpiarDatos.js";
+import { conexionAPI } from "./conexionAPI.js";
+import { eventoEliminar } from "./limpiarDatos.js";
 
 const lista = document.querySelector("[data-lista-productos]");
 
