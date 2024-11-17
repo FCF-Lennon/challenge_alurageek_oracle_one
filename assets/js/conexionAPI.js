@@ -26,8 +26,21 @@ async function crearProducto(titulo, precio, imagen) {
     return dataJson;
 }
 
+async function eliminarProducto(id) {
+    
+    const conexion = await fetch(`${url}/${id}`, {
+        method: "DELETE",
+    });
+
+    if (!conexion.ok) {
+        throw new Error("No se pudo eliminar el producto :(");
+    }
+}
+
 export const conexionAPI = {
-    obtenerProductos, crearProducto
+    obtenerProductos, 
+    crearProducto,
+    eliminarProducto
 }
 
 

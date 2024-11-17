@@ -12,7 +12,7 @@ async function optenerDataFormulario(evento) {
 
     try {
         await conexionAPI.crearProducto(titulo, precio, imagen);
-        alert("Producto fue creado con exito :)");
+        alert("El producto fue creado con exito :)");
     } catch (e) {
         alert(e);
     }

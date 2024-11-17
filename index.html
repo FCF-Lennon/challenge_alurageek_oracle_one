@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>alurageek</title>
 </head>
 <body>
     <header class="encabezado__principal">
         <div class="contenedor__img-header">
-            <img src="/assets/imagenes/header/icono.png" alt="tres corazones alineados horizontalmente">
+            <img src="assets/imagenes/header/icono.png" alt="tres corazones alineados horizontalmente">
         </div>
         <h2 class="titulo__encabezado">AluraGeek</h2>
     </header>
@@ -26,25 +26,28 @@
                 <h2 class="titulo__formulario">AGREGAR PRODUCTO:</h2>
                 <div class="formulario__items-inputs">
                     <input class="input__formulario" type="text" placeholder="nombre..." required data-titulo>
-                    <input class="input__formulario" type="number" placeholder="precio..." required data-precio>
-                    <input class="input__formulario" type="text" placeholder="URL imagen..." required data-url-imagen>
+                    <input class="input__formulario" type="number" min="1" placeholder="precio igual o mayor a 1..." required data-precio>
+                    <input class="input__formulario" type="url" placeholder="URL imagen http:// o https://..." required data-url-imagen>
                 </div>
                 <div class="formulario__items-botones">
                     <input class="boton__formulario boton__enviar" type="submit" value="Enviar">
-                    <button class="boton__formulario boton__limpiar" >Limpiar</button>
+                    <button class="boton__formulario boton__limpiar" data-boton-limpiar>Limpiar</button>
                 </div>
             </form>
         </seccion>
     </main>
     <footer class="contenedor__rodapie">
         <div class="contenedor__items-img-titulo-rodapie">
-            <img src="/assets/imagenes/header/icono.png" alt="tres corazones alineados horizontalmente">
+            <img src="assets/imagenes/header/icono.png" alt="tres corazones alineados horizontalmente">
             <h2 class="titulo__rodapie">AluraGeek</h2>
         </div>
         <p class="descripcion__rodapie">DESARROLLADO POR PIPEDEV</p>
         <p class="desarrollo__rodapie">ALURA LATAM - 2024</p>
     </footer>
-    <script type="module" src="/assets/js/renderizar_productos.js"></script>
-    <script type="module" src="/assets/js/crear_producto.js"></script>
+
+    <script type="module" src="assets/js/renderizar_productos.js"></script>
+    <script type="module" src="assets/js/limpiarDatos.js"></script>
+    <script type="module" src="assets/js/crear_producto.js"></script>
+    
 </body>
 </html>

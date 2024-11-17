@@ -99,6 +99,9 @@ body {
     font-weight: 400;
     font-family: var(--font-secundaria);
     text-align: center;
+    width: 335px;
+    word-wrap: break-word;
+
 }
 
 .formulario__items-inputs {
@@ -194,6 +197,14 @@ body {
     text-align: center;
 }
 
+.modal__renderizacion-productos {
+    color: var(--wine-purple);
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-shadow: -5px 6px 3.3px rgba(0, 0, 0, 0.25);
+}
+
 .contenedor__productos {
     display: flex;
     flex-flow: row wrap;
@@ -254,6 +265,12 @@ body {
     font-size: 1.6rem;
     font-weight: bold;
     color: var(--light-gray);
+}
+
+.boton__eliminar-producto {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 /* rodapie */
@@ -318,5 +335,8 @@ body {
         padding-top: 60px;
     }
 
+    .titulo__seccion-productos {
+        padding-bottom: 4px;
+    }
    
 }
